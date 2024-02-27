@@ -164,6 +164,7 @@ nav .dextop li:hover {
   border-radius: 50%;
   border: 6px solid var(--logo);
   box-shadow: 0 0 80px var(--logo);
+  width:80%;
 }
 
 /* =========================social Media */
