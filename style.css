@@ -15,7 +15,7 @@
   --nav_color: #110b37;
   --btn_color: #e416e4;
   --logo: #09ecec;
-  --socialMeida_hover: #a0d6d6;
+  --socialMeida_hover: #a0d6d6b3;
   --paragraph_text: #a5a2a2;
 }
 
@@ -25,6 +25,15 @@ body {
 }
 
 /* ======================universal end */
+
+.bg-head {
+  background: linear-gradient(0deg, #0e0544cc, #0e0544cc, #0e0544cc), url("img/background.jpg");
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  object-fit: cover;
+}
 
 .container {
   width: 80%;
@@ -164,7 +173,7 @@ nav .dextop li:hover {
   border-radius: 50%;
   border: 6px solid var(--logo);
   box-shadow: 0 0 80px var(--logo);
-  width:80%;
+  width: 80%;
 }
 
 /* =========================social Media */
@@ -216,8 +225,23 @@ header .btn:hover {
   box-shadow: 0 0 40px var(--logo);
 }
 
+/* Main part */
+.body {
+  background: linear-gradient(0deg, #0e0544e6, #0e0544e6, #0e0544e6), url("img/body.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  position: sticky;
+  top: 0;
+}
+
 @media screen and (max-width: 640px) {
- 
+  .bg-head {
+    background-position:center;
+  }
+
   nav .dextop {
     display: none;
   }
@@ -240,13 +264,13 @@ header .btn:hover {
     font-size: 2.4rem;
     line-height: 3.2rem;
   }
-  .header_title h2{
+  .header_title h2 {
     font-size: 1.6rem;
   }
-  .header_title h3{
+  .header_title h3 {
     font-size: 1.25rem;
   }
-  .header_title p{
+  .header_title p {
     font-size: 1rem;
   }
   .header_img_div {
@@ -277,5 +301,4 @@ header .btn:hover {
   .header_img_div {
     justify-content: center;
   }
-  
 }
